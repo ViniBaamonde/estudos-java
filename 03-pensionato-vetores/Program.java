@@ -32,11 +32,14 @@ public class Program {
 			System.out.println();
 			sc.nextLine();
 		}
-		System.out.println();
 		
-		for(int i = 0; i < 10; i++) {
-			if(reserva[i] != null) {
-				System.out.println(i + " :" + reserva[i] );
+		
+		System.out.println("|------ Quartos reservados ------");
+		System.out.println("|                                ");
+		for(int i = 0; i < reserva.length; i++) {
+			if(reserva[i] != null) {          
+				System.out.println("|      " + i + " :" + reserva[i] + "             ");
+				System.out.println("|---------------------------------");
 			}
 		}
 		

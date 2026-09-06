@@ -38,7 +38,7 @@ public class Program {
 		System.out.println("|                                ");
 		for(int i = 0; i < reserva.length; i++) {
 			if(reserva[i] != null) {          
-				System.out.println("|      " + i + " :" + reserva[i] + "             ");
+				System.out.println("|  " + i + " :" + reserva[i] + "             ");
 				System.out.println("|---------------------------------");
 			}
 		}

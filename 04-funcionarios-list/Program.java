@@ -1,6 +1,5 @@
 package application;
 
-import java.io.ObjectInputStream.GetField;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
@@ -76,7 +75,11 @@ public class Program {
 	}
 	
 	public static boolean temId(List<Funcionario>list, int id) {
-		Funcionario func = list.stream().filter(x -> x.getId() == id).findFirst().orElse(null);
-		return func != null;
+		for(int i = 0; i < list.size(); i++) {
+			if(list.get(i).getId() == id) {
+				return true;
+			}
+		}
+		return false;
 	}
 }
